@@ -1,0 +1,71 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.banner {
+  height: 90vh;
+  width: 100vw;
+  background-color: teal;
+  display: flex;
+}
+
+.banner > div {
+  height: 100%;
+  width: 50%;
+}
+
+.banner-left {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding:10px; */
+}
+
+.banner-left > button {
+  width: 50%;
+  height: 7%;
+  border-radius: 15px;
+  background-color: purple;
+  color: white;
+  border: 2px solid whitesmoke;
+  position: relative;
+  top: 50px;
+  transition: 500ms;
+}
+
+.banner-left > button:hover {
+  background-color: indigo;
+}
+
+.banner-left > p,
+h1:hover {
+  max-width: 500px;
+  transition: 500ms;
+}
+
+.banner-left > p:hover,
+h1:hover {
+  color: white;
+}
+
+.banner-right {
+  background-color: indigo;
+  overflow: hidden;
+}
+
+.banner-right > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 100px, 100px;
+  transition: 500ms;
+}
+
+.banner-right > img:hover {
+  transform: scale(1.2);
+}
